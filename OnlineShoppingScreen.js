@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, StyleSheet, TouchableOpacity} from 'react-native'
+import {Text, View, StyleSheet, TouchableOpacity, Image} from 'react-native'
 
 export default function OnlineShoppingScreen(){
   return(
@@ -15,7 +15,7 @@ export default function OnlineShoppingScreen(){
         saepe distinctio? Ipsa, excepturi perspiciatis. Veniam, quos!
          </Text>
 
-         {/* <Image source={require('../assets/online.png')} style={styles.image}/> */}
+         <Image source={require('./assets/online.png')} style={styles.image}/>
         
          <View>
                       <TouchableOpacity style={styles.buttonContainer}>
@@ -32,6 +32,7 @@ export default function OnlineShoppingScreen(){
 
 const styles = StyleSheet.create({
     container:{
+        
         flexDirection:"column",
         marginHorizontal:20,
         alignItems:"center",
@@ -44,12 +45,14 @@ const styles = StyleSheet.create({
     },
     paragraph:{
         marginTop:30,
-        alignItems:"center"
+        alignItems:"center",
+        
     },
     heading:{
         fontSize:20,
         marginBottom:30,
-        alignItems:"center"
+        alignItems:"center",
+        
     }, 
     buttonContainer:{
         height:50,

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, StyleSheet, TouchableOpacity} from 'react-native'
+import {Text, View, StyleSheet, TouchableOpacity, Image} from 'react-native'
 
 export default function PaymentSuccessfulScreen(){
   return(
@@ -15,7 +15,7 @@ export default function PaymentSuccessfulScreen(){
         saepe distinctio? Ipsa, excepturi perspiciatis. Veniam, quos!
          </Text>
 
-         {/* <Image source={require('../assets/shop.png')} style={styles.image}/> */}
+         <Image source={require('./assets/shop.png')} style={styles.image}/>
         
          <View>
                       <TouchableOpacity style={styles.buttonContainer}>

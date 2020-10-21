@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, StyleSheet, TouchableOpacity} from 'react-native'
+import {Text, View, StyleSheet, TouchableOpacity, Image} from 'react-native'
 
 export default function AddToCartScreen(){
   return(
@@ -15,7 +15,7 @@ export default function AddToCartScreen(){
         saepe distinctio? Ipsa, excepturi perspiciatis. Veniam, quos!
          </Text>
 
-         {/* <Image source={require('../assets/add.png')} style={styles.image}/> */}
+         <Image source={require('./assets/add.png')} style={styles.image}/>
         
          <View>
                       <TouchableOpacity style={styles.buttonContainer}>
