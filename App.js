@@ -1,24 +1,25 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import OnlineShoppingScreen from './OnlineShoppingScreen'
-import AddToCartScreen from './AddToCartScreen'
-import PaymentSuccessfulScreen from './PaymentSuccessfulScreen'
+import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack'
+import OnlineShoppingScreen from './src/screens/OnlineShoppingScreen';
+import AddToCartScreen from './src/screens/AddToCartScreen';
+import PaymentSuccessfulScreen from './src/screens/PaymentSuccessfulScreen';
+
+const Stack = createStackNavigator()
 
 export default function App() {
   return (
-    <View>
-      <OnlineShoppingScreen />
-      {/* <AddToCartScreen /> */}
-      {/* <PaymentSuccessfulScreen /> */}
-    </View>
+   <NavigationContainer>
+
+      <Stack.Navigator>
+        <Stack.Screen name="AddToCart" component={AddToCartScreen} />
+        <Stack.Screen name="OnlineShopping" component={OnlineShoppingScreen} />
+        <Stack.Screen name="PaymentSuccessful" component={PaymentSuccessfulScreen} />
+      </Stack.Navigator>
+
+   </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 10,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
