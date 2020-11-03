@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text, View, StyleSheet, TouchableOpacity, Image} from 'react-native'
 
-export default function OnlineShoppingScreen(){
+export default function OnlineShoppingScreen({navigation}){
   return(
       <View style={styles.container}>
            <Text style={styles.heading}>
@@ -18,7 +18,9 @@ export default function OnlineShoppingScreen(){
          <Image source={require('../../assets/online.png')} style={styles.image}/>
         
          <View>
-                      <TouchableOpacity style={styles.buttonContainer}>
+                      <TouchableOpacity onPress={()=>{
+                          navigation.navigate("AddToCart")
+                      }}style={styles.buttonContainer}>
                           <Text style={styles.buttonText}>Next</Text>
                       </TouchableOpacity>
 

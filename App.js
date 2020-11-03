@@ -13,8 +13,9 @@ export default function App() {
    <NavigationContainer>
 
       <Stack.Navigator>
+      <Stack.Screen name="OnlineShopping" component={OnlineShoppingScreen} />
         <Stack.Screen name="AddToCart" component={AddToCartScreen} />
-        <Stack.Screen name="OnlineShopping" component={OnlineShoppingScreen} />
+        
         <Stack.Screen name="PaymentSuccessful" component={PaymentSuccessfulScreen} />
       </Stack.Navigator>
 
