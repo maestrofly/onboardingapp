@@ -39,9 +39,10 @@ const styles = StyleSheet.create({
         marginVertical:10
     },
     image:{
-        width:50, 
-        height:50,
-        borderRadius:50
+        width:220, 
+        height:250,
+        marginVertical:15,
+        alignSelf:'center',
     },
     paragraph:{
         marginTop:30,
@@ -56,10 +57,16 @@ const styles = StyleSheet.create({
     }, 
     buttonContainer:{
         height:50,
+        width:150,
         backgroundColor:"#8a55ed",
         justifyContent:"center",
-        alignItems:"center",
-        borderRadius:10,
-        marginVertical:50
+        alignSelf:"center",
+        borderRadius:30,
+    },
+    buttonText:{
+        fontWeight:'bold',
+        fontSize: 20,
+        color: '#fff',
+        alignSelf:'center'
     }
 })

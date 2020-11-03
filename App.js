@@ -8,8 +8,8 @@ export default function App() {
   return (
     <View>
       <OnlineShoppingScreen />
-      {/* <AddToCartScreen />
-      <PaymentSuccessfulScreen /> */}
+      {/* <AddToCartScreen /> */}
+      {/* <PaymentSuccessfulScreen /> */}
     </View>
   );
 }

@@ -38,9 +38,10 @@ const styles = StyleSheet.create({
         marginVertical:10
     },
     image:{
-        width:50, 
-        height:50,
-        borderRadius:50
+        width:220, 
+        height:250,
+        marginVertical:15,
+        alignSelf:'center',
     },
     paragraph:{
         marginTop:30,
@@ -58,5 +59,10 @@ const styles = StyleSheet.create({
         alignItems:"center",
         borderRadius:10,
         marginVertical:50
+    },
+    buttonText:{
+        fontWeight:'bold',
+        fontSize: 20,
+        color: '#fff'
     }
 })
