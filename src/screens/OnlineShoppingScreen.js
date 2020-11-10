@@ -19,7 +19,7 @@ export default function OnlineShoppingScreen({navigation}){
         
          <View>
                       <TouchableOpacity onPress={()=>{
-                          navigation.navigate("AddToCart")
+                          navigation.navigate("AddToCart", {newTitle:"from fly shopping"})
                       }}style={styles.buttonContainer}>
                           <Text style={styles.buttonText}>Next</Text>
                       </TouchableOpacity>

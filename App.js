@@ -12,8 +12,25 @@ export default function App() {
   return (
    <NavigationContainer>
 
-      <Stack.Navigator>
-      <Stack.Screen name="OnlineShopping" component={OnlineShoppingScreen} />
+      <Stack.Navigator
+       screenOptions={
+        {
+          title:"FLY SHOP",
+          headerStyle:{
+            backgroundColor:"red"
+          },
+          headerTintColor:"blue",
+          headerTitleAlign:"center",
+          headerRight:()=>(<Text style={{color:"green", marginRight:10}}>Icon</Text>),
+          headerLeft: ()=>(<Text style={{color:"green", marginRight:10}}>Icon</Text>)
+        }
+       }
+      >
+      <Stack.Screen
+      // options={} 
+      name="OnlineShopping"
+     component={OnlineShoppingScreen} />
+
         <Stack.Screen name="AddToCart" component={AddToCartScreen} />
         
         <Stack.Screen name="PaymentSuccessful" component={PaymentSuccessfulScreen} />

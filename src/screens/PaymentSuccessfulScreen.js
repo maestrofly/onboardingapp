@@ -54,15 +54,17 @@ const styles = StyleSheet.create({
     }, 
     buttonContainer:{
         height:50,
+        width:150,
         backgroundColor:"#8a55ed",
         justifyContent:"center",
         alignItems:"center",
-        borderRadius:10,
+        borderRadius:30,
         marginVertical:50
     },
     buttonText:{
         fontWeight:'bold',
         fontSize: 20,
-        color: '#fff'
+        color: '#fff',
+        alignSelf:"center"
     }
 })
